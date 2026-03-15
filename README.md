@@ -55,6 +55,90 @@ empathy-engine
 ```
 
 ---
+## ▶️ How to Run the Project
+
+Follow these steps to run the Empathy Engine locally.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/empathy-engine.git
+cd empathy-engine
+```
+
+---
+
+### 2. Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+Activate the virtual environment.
+
+**Windows**
+
+```bash
+venv\Scripts\activate
+```
+
+**Linux / Mac**
+
+```bash
+source venv/bin/activate
+```
+
+---
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 4. Run the Web Application
+
+```bash
+uvicorn app:app --reload
+```
+
+Open your browser and go to:
+
+```
+http://127.0.0.1:8000
+```
+
+Enter text in the UI and click **Generate Speech** to detect emotion and hear the generated audio.
+
+---
+
+### 5. Run the CLI Version (Optional)
+
+```bash
+python main.py
+```
+
+Enter text directly in the terminal to generate emotionally modulated speech.
+
+---
+
+### 6. Output
+
+Generated audio files will be stored in:
+
+```
+audio_outputs/
+```
+
+Example:
+
+```
+audio_outputs/output_1.wav
+audio_outputs/output_2.wav
+```
+
 
 ## 🛠 Technologies Used
 
