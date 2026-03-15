@@ -21,25 +21,25 @@ def home(request: Request):
 @app.post("/process", response_class=HTMLResponse)
 def process_text(request: Request, text: str = Form(...)):
 
-    emotion, score = detect_emotion(text)
+    # emotion, score = detect_emotion(text)
 
-    params = get_voice_parameters(emotion, score)
+    # params = get_voice_parameters(emotion, score)
 
-    rate = params["rate"]
-    volume = params["volume"]
+    # rate = params["rate"]
+    # volume = params["volume"]
 
-    # generate speech and get filename
-    audio_file = speak_text(text, rate, volume)
+    # # generate speech and get filename
+    # audio_file = speak_text(text, rate, volume)
 
-    return templates.TemplateResponse(
-        "index.html",
-        {
-            "request": request,
-            "emotion": emotion,
-            "confidence": f"{score:.2f}",
-            "audio_file": audio_file
-        }
-    )
+    # return templates.TemplateResponse(
+    #     "index.html",
+    #     {
+    #         "request": request,
+    #         "emotion": emotion,
+    #         "confidence": f"{score:.2f}",
+    #         "audio_file": audio_file
+    #     }
+    # )
 
     emotion, score = detect_emotion(text)
 
