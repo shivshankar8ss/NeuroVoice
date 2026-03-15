@@ -31,6 +31,7 @@ This project demonstrates integration of **Natural Language Processing**, **Mach
 
 The system follows this pipeline:
 
+```text
 empathy-engine
 │
 ├── app.py                     # FastAPI application for the web interface
@@ -52,6 +53,7 @@ empathy-engine
 └── README.md                  # Project documentation
 
 
+
 ---
 
 ## 🛠 Technologies Used
@@ -66,15 +68,6 @@ empathy-engine
 
 ---
 
-## 📌 Future Improvements
-
-- Add **pitch modulation**
-- Support **multi-emotion detection**
-- Improve UI design
-- Deploy using **cloud-friendly TTS**
-- Add real-time speech streaming
-
----
 
 ## 👨‍💻 Developed By
 
