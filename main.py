@@ -1,5 +1,3 @@
-# main.py
-
 from emotion_detector import detect_emotion
 from voice_modulator import get_voice_parameters
 from tts_engine import speak_text

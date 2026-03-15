@@ -1,5 +1,3 @@
-# voice_modulator.py
-
 def get_voice_parameters(emotion, confidence):
 
     emotion = emotion.lower()

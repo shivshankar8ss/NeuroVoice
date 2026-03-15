@@ -1,5 +1,3 @@
-# tts_engine.py
-
 import pyttsx3
 import os
 
@@ -21,10 +19,8 @@ def speak_text(text, rate, volume):
 
     os.makedirs("audio_outputs", exist_ok=True)
     filename = f"audio_outputs/output_{audio_counter}.wav"
-    # Save audio to file
     engine.save_to_file(text, filename)
 
-    # speak text
     engine.say(text)
 
     # execute speech

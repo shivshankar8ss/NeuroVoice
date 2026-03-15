@@ -1,6 +1,3 @@
-# emotion_detector.py
-
-# Import HuggingFace pipeline for emotion classification
 from transformers import pipeline
 
 # Load pre-trained emotion detection model
